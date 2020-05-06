@@ -394,3 +394,14 @@ padding:15px 10px;
 padding-right:0;
 }
 }
+
+
+@media (max-width: 600px) {
+.title{
+display:none;
+
+}
+
+}
+
+
