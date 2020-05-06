@@ -4,24 +4,49 @@
   <meta charset="UTF-8">
   <title>CodePen - Shooting Stars</title>
   <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script>
+$(function() {
+    
+    $(".toggle").on("click", function(){
+    if($(".item").hasClass("active")){
+       $(".item").removeClass("active");
+    }
+    else{
+      $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <body>
 <nav>
-  </nav>
+<ul class="menu">
+<li class="logo"><a  href="https://hsuiiii.github.io/StudioFinal/">★</a></li>
+<li class="item"><a  href="https://hsuiiii.github.io/StudioFinal/Energy/index.html">T</a></li>
+<li class="item">A</li>
+<li class="item">R</li>
+<li class="item ">O</li>
+<li class="item ">T</li>
+<li class="toggle"><a  href="#"><span class="bars"></span></a></li>
+</ul>
+</nav>
 
 <h1 class=“intro>If you can only bring one thing with you, what you are going to pick.</h1>
 
 
 <div class= "container">
   <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729842/choice_4_qv9d6g.png">
-  <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729842/choice_5_eskcly.png">
+  <a href="Enviroment/Red1.html"><img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729842/choice_5_eskcly.png"></a>
   <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729842/choice1_vyb4sv.png">
   </div>
   <div class="container">
- <a href="Enviroment/index.html"> <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729841/choice3_bdvu5h.png">
+ <a href="Enviroment/Red1.html"> <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729841/choice3_bdvu5h.png"></a>
   <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729841/choice_2_th1wfi.png">
   <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588729841/choice_6_mqpevg.png">
   </div>
