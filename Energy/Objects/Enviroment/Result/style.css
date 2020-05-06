@@ -14,18 +14,17 @@ body {
 }
 
 
-p{
- text-align:center;
-  margin-top:5%;
-  font-size:20px;
+h1.title{
+text-align: center;
+margin-top:5%;
+margin-bottom:5%;
+font-size: 50px;
 }
 
-img.title{
-margin-left: 45%;
-margin-top: 5%;
-margin-bottom:5%;
-width:150px;
-}
+
+
+
+
   body, html {
   height: 100vh;
   margin: 0;
@@ -397,8 +396,12 @@ padding-right:0;
 
 
 @media (max-width: 600px) {
-.title{
+h1{
 display:none;
+}
+
+.flip-card{
+margin-top:20%;
 
 }
 
