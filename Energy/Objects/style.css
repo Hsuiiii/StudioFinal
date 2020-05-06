@@ -24,7 +24,7 @@ h1{
  
 img{
   
-  width:120px;
+  width:90px;
   margin-left:7%;
   margin-right:7%;
   margin-bottom:7%;
@@ -34,4 +34,160 @@ img:hover{
   filter: blur(5px);
 
   
+}
+
+/** menu **/
+
+nav{
+
+padding: 1px 15px;
+border-bottom:1px rgb(199, 193, 193) solid;
+}
+
+ul{
+   list-style-type:none;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+
+a:hover{
+  filter: blur(5px);
+
+}
+
+.menu li{
+ font-size:16px;
+ padding:15px 5px;
+ 
+}
+
+.menu li a{
+  display:block;
+}
+
+.logo a{
+   font-size:20px;
+}
+
+
+
+
+
+/* Mobile */
+.menu{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items:center;
+}
+
+.toggle{
+  order:1;
+}
+
+
+
+.item{
+width:100%;
+color:rgb(65, 62, 62);
+text-align:center;
+order:2;
+display:none;
+}
+
+.item.active{
+display:block;
+}
+
+.toggle{
+cursor:pointer;
+
+}
+
+.bars{
+
+   background:#999;
+   display:inline-block;
+   position:relative;
+   height:2px;
+   width:18px;   
+}
+
+
+.bars::before,.bars::after{
+
+   background:#999;
+   content:"";
+   display:block;
+   height:2px;
+   position: absolute;
+   width:18px;
+   text-align: left;
+}
+
+.bars::before{
+ top:5px;
+
+}
+
+.bars::after{
+ top:-5px;
+
+}
+
+
+
+/*Tablet*/
+@media all and (min-width:460px){
+.menu{
+  justify-content:center;
+}
+
+.logo{
+   flex:1;
+}
+
+
+.toggle{
+order:2;
+}
+
+}
+
+/* Desktop Menu*/
+
+@media all and (min-width: 768px){
+.item{
+display:block;
+width:auto;
+color:rgb(65, 62, 62);
+}
+
+.toggle{
+display:none;
+}
+
+.logo{
+  text-align: left;
+ order:0;
+}
+
+.item{
+order:1;
+}
+
+.button{
+order:2;
+}
+
+.menu li{
+padding:15px 10px;
+}
+
+.menu li.button{
+padding-right:0;
+}
 }
