@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+body {
+  background: linear-gradient(145deg, #00103a 20%, #7C5AC5 100%);
+  color:white;
+  align-items: center;
+  text-align:center;
+  overflow: hidden;
+  font-family: 'Kelly Slab', cursive;
+}
+
+h1{
+  margin:10%;
+  font-size:20px;
+}
+
+
+  body, html {
+
+  margin: 0;
+  height: 100vh;
+  
+}
+ 
+img{
+  
+  width:120px;
+  margin-left:7%;
+  margin-right:7%;
+  margin-bottom:7%;
+}
+
+img:hover{
+  filter: blur(5px);
+
+  
+}

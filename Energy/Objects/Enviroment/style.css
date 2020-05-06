@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+body {
+  background: linear-gradient(145deg, #00103a 20%, #7C5AC5 100%);
+  color:white;
+  align-items: center;
+  text-align:center;
+  overflow: hidden;
+  font-family: 'Kelly Slab', cursive;
+  margin-bottom:10%;
+}
+
+h1{
+  margin-top:10%;
+  font-size:20px;
+}
+
+
+  body, html {
+
+  margin: 0;
+  height: 100vh;
+  
+}
+ 
+
+.container{
+  width:1000px;
+  height:500px;
+margin-left:15%;
+  margin-top:5%;
+  background-image: url("https://res.cloudinary.com/dokp9e80w/image/upload/v1588732544/environment_1_gb6zcq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.click1{
+  width: 30px;
+  height:30px;
+  background-color: red;
+  border-radius: 50px;
+  position:relative;
+  top:410px;
+  left:100px;
+}
+
+.click2{
+  width: 30px;
+  height:30px;
+  background-color: red;
+  border-radius: 50px;
+  position:relative;
+  top:330px;
+  left:400px;
+}
+
+.click3{
+  width: 30px;
+  height:30px;
+  background-color: red;
+  border-radius: 50px;
+  position:relative;
+  top:350px;
+  left:800px;
+}
