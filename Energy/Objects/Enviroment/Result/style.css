@@ -7,12 +7,9 @@
 body {
   background: linear-gradient(145deg, #00103a 20%, #7C5AC5 100%);
   color:white;
-  font-size:60px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  position: relative;
-  line-height:30px;
   font-family: 'Kelly Slab', cursive;
 }
 
@@ -23,11 +20,11 @@ p{
   font-size:20px;
 }
 
-h1{
-  text-align:center;
-   margin-top:10%;
-  margin-bottom:10%;
-   font-size:50px;
+img.title{
+margin-left: 45%;
+margin-top: 5%;
+margin-bottom:5%;
+width:150px;
 }
   body, html {
   height: 100vh;
@@ -38,8 +35,6 @@ h1{
   width: 2500px;
   height: 2500px;
   transform: rotateZ(35deg);
-
-
 }
 
 
@@ -133,7 +128,7 @@ h1{
   top: calc(20% - 30px);
   left: calc(5% - 1020px);
   animation-delay: 2080ms;
-}(8)::before, .star:nth-child(8)::after {
+}::before, .star:nth-child(8)::after {
   animation-delay: 2080ms;
 }
 
@@ -141,7 +136,7 @@ h1{
   top: calc(10% - 620px);
   left: calc(10% - 410px);
   animation-delay: 1080ms;
-}(9)::before, .star:nth-child(9)::after {
+}::before, .star:nth-child(9)::after {
   animation-delay: 1080ms;
 }
 
@@ -149,9 +144,11 @@ h1{
   top: calc(5% - 900px);
   left: calc(5% - 1810px);
   animation-delay: 1280ms;
-}(10)::before, .star:nth-child(10)::after {
+}::before, .star:nth-child(10)::after {
   animation-delay: 880ms;
 }
+
+
 
 
 /* Animations */
@@ -191,96 +188,7 @@ h1{
 }
 
 
-.hm1{
-  margin-left:20%;
-  margin-top:-5%;
-  text-align:left;
-  filter :blur(5px);
-}
 
-.hm2{
-  margin-right:25%;
-  text-align:right;
-  filter :blur(5px);
-  margin-top:-9%；
-}
-
-.hm3{
-  filter :blur(5px);
-margin-right:20%;
-  margin-top:-5%;
-  display:block;
-  
-}
-
-.hm1:hover{
-  filter :blur(0px);
-  
-}
-
-.hm2:hover{
-  filter :blur(0px);
-  
-}
-
-.hm3:hover{
-  filter :blur(0px);
-  
-}
-
-.hm4:hover{
-  filter :blur(10px);
-}
-
-
-.hm5{
-  margin-left:10%;
-  text-align:left;
-  filter :blur(5px);
-}
-
-.hm5:hover{
-  filter :blur(0px);
-  
-}
-
-
-.hm6{
-  margin-right:30%;
-
-  text-align:right;
-  
-  filter :blur(5px);
-}
-
-.hm6:hover{
-  filter :blur(0px);
-  
-}
-
-
-.hm7{
-  text-align:right;
-  margin-right:10%;
-    filter :blur(5px);
-}
-
-.hm7:hover{
-  filter :blur(0px);
-  line-height:10px;
-  
-}
-
-.hm8{
-  text-align:right;
-  margin-right:15%;
-    filter :blur(5px);
-}
-
-.hm8:hover{
-  filter :blur(0px);
-  
-}
 .dm{
     width: 230px;
   height: 400px;
@@ -293,19 +201,14 @@ margin-right:20%;
   width: 230px;
   height: 400px;
   perspective: 1000px;
-
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
-
- 
   
 }
 
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -318,8 +221,6 @@ margin-right:20%;
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -330,10 +231,166 @@ margin-right:20%;
 }
 
 .flip-card-back {
-  background-color:;
   color:white;
   transform: rotateY(180deg);
 }
 
 
+
+
+
+/** menu **/
+
+nav{
+
+padding: 1px 15px;
+border-bottom:1px rgb(199, 193, 193) solid;
+}
+
+ul{
+   list-style-type:none;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+}
+
+a:hover{
+  filter: blur(5px);
+
+}
+
+.menu li{
+ font-size:16px;
+ padding:15px 5px;
+ 
+}
+
+.menu li a{
+  display:block;
+}
+
+.logo a{
+   font-size:20px;
+}
+
+
+
+
+
+/* Mobile */
+.menu{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items:center;
+}
+
+.toggle{
+  order:1;
+}
+
+
+
+.item{
+width:100%;
+color:rgb(166, 243, 248);
+text-align:center;
+order:2;
+display:none;
+}
+
+.item.active{
+display:block;
+}
+
+.toggle{
+cursor:pointer;
+
+}
+
+.bars{
+
+   background:#999;
+   display:inline-block;
+   position:relative;
+   height:2px;
+   width:18px;   
+}
+
+
+.bars::before,.bars::after{
+
+   background:#999;
+   content:"";
+   display:block;
+   height:2px;
+   position: absolute;
+   width:18px;
+   text-align: left;
+}
+
+.bars::before{
+ top:5px;
+
+}
+
+.bars::after{
+ top:-5px;
+
+}
+
+
+
+/*Tablet*/
+@media all and (min-width:460px){
+.menu{
+  justify-content:center;
+}
+
+.logo{
+   flex:1;
+}
+
+
+.toggle{
+order:2;
+}
+
+}
+
+/* Desktop Menu*/
+
+@media all and (min-width: 768px){
+.item{
+display:block;
+width:auto;
+color:rgb(166, 243, 248);
+}
+
+.toggle{
+display:none;
+}
+
+.logo{
+  text-align: left;
+ order:0;
+}
+
+.item{
+order:1;
+}
+
+.button{
+order:2;
+}
+
+.menu li{
+padding:15px 10px;
+}
+
+.menu li.button{
+padding-right:0;
+}
 }
