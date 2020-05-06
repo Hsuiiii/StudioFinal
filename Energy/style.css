@@ -28,16 +28,6 @@ h1{
   width: 160px;
   margin:5%;
 }
-.container {
-  position: relative;
-  width: 160px;
-  margin:5%;
-}
-.container {
-  position: relative;
-  width: 160px;
-  margin:5%;
-}
 
 .image {
   opacity: 1;
@@ -104,15 +94,21 @@ h1{
 }
 
 .energy{
-margin:5%;
+ margin:5%;
+
 }
 
+.energy:hover{
+
+  filter: blur(0px);
+  filter: brightness(10px);
+ }
 
 /** menu **/
 
 nav{
-background-color:;
-padding: 2px 15px;
+
+padding: 1px 15px;
 border-bottom:1px rgb(199, 193, 193) solid;
 }
 
@@ -126,12 +122,14 @@ a{
 }
 
 a:hover{
-  text-decoration:underline;
+  filter: blur(5px);
+
 }
 
 .menu li{
  font-size:16px;
  padding:15px 5px;
+ 
 }
 
 .menu li a{
@@ -142,9 +140,7 @@ a:hover{
    font-size:20px;
 }
 
-.button.secondary{
-   border-bottom:2px rgb(250, 250, 250) solid;
-}
+
 
 
 
@@ -164,6 +160,7 @@ align-items:center;
 
 .item{
 width:100%;
+color:rgb(65, 62, 62);
 text-align:center;
 order:2;
 display:none;
@@ -192,7 +189,7 @@ cursor:pointer;
 
    background:#999;
    content:"";
-   display:inline-block;
+   display:block;
    height:2px;
    position: absolute;
    width:18px;
@@ -221,17 +218,12 @@ cursor:pointer;
    flex:1;
 }
 
-.item .button{
-width:auto;
-order:1;
-display:block;
-}
 
 .toggle{
 order:2;
 }
 
-
+}
 
 /* Desktop Menu*/
 
@@ -239,6 +231,7 @@ order:2;
 .item{
 display:block;
 width:auto;
+color:rgb(65, 62, 62);
 }
 
 .toggle{
@@ -265,4 +258,40 @@ padding:15px 10px;
 .menu li.button{
 padding-right:0;
 }
+}
+
+
+
+@media (max-width: 600px) {
+
+  .fate{
+     display:inline ;
+     flex-flow: row no-wrap;
+     align-items: center;
+     justify-content: center;
+     left:50%;
+  
+  }
+
+  .container {
+    position: relative;
+    width: 100px;
+    margin: auto;
+  }
+  
+  .image{
+    width:100px;
+    height:100px;
+
+  }
+
+  .text
+  ,.text2,.text3{
+    width:90px;
+    height: 90px;
+    border: radius 70px;
+  }
+  h1{
+    font-size:14px;
+  }
 }

@@ -13,7 +13,7 @@ body {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  line-height:30px;
+  line-height:20px;
   font-family: 'Kelly Slab', cursive;
 }
 
@@ -30,8 +30,8 @@ p{
 }
 
 img{
-margin-left:40%;
-   margin-top:10%;
+   margin-left:40%;
+   margin-top:5%;
   margin-bottom:10%;
    width:300px;
 
@@ -140,7 +140,7 @@ margin-left:40%;
   top: calc(20% - 30px);
   left: calc(5% - 1020px);
   animation-delay: 2080ms;
-}(8)::before, .star:nth-child(8)::after {
+}::before, .star:nth-child(8)::after {
   animation-delay: 2080ms;
 }
 
@@ -148,7 +148,7 @@ margin-left:40%;
   top: calc(10% - 620px);
   left: calc(10% - 410px);
   animation-delay: 1080ms;
-}(9)::before, .star:nth-child(9)::after {
+}::before, .star:nth-child(9)::after {
   animation-delay: 1080ms;
 }
 
@@ -156,7 +156,7 @@ margin-left:40%;
   top: calc(5% - 900px);
   left: calc(5% - 1810px);
   animation-delay: 1280ms;
-}(10)::before, .star:nth-child(10)::after {
+}::before, .star:nth-child(10)::after {
   animation-delay: 880ms;
 }
 
@@ -203,40 +203,47 @@ margin-left:40%;
   margin-top:-5%;
   text-align:left;
   filter :blur(5px);
+  font-size: 25px;
 }
 
 .hm2{
   margin-right:25%;
   text-align:right;
   filter :blur(5px);
-  margin-top:-9%；
+  font-size: 10px;
+  position: inline-block;
+
 }
 
 .hm3{
   filter :blur(5px);
-margin-right:20%;
-  margin-top:-5%;
-  display:block;
+ margin-right:20%;
+  font-size: 12px;
+
   
 }
 
 .hm1:hover{
   filter :blur(0px);
+  font-size: 20px;
   
 }
 
 .hm2:hover{
   filter :blur(0px);
+  font-size:20px;
   
 }
 
 .hm3:hover{
   filter :blur(0px);
+  font-size:20px;
   
 }
 
 .hm4:hover{
   filter :blur(10px);
+  font-size:20px;
 }
 
 
@@ -248,6 +255,7 @@ margin-right:20%;
 
 .hm5:hover{
   filter :blur(0px);
+  font-size:20px;
   
 }
 
@@ -262,6 +270,7 @@ margin-right:20%;
 
 .hm6:hover{
   filter :blur(0px);
+  font-size:20px;
   
 }
 
@@ -275,6 +284,7 @@ margin-right:20%;
 .hm7:hover{
   filter :blur(0px);
   line-height:10px;
+  font-size:20px;
   
 }
 
@@ -286,5 +296,6 @@ margin-right:20%;
 
 .hm8:hover{
   filter :blur(0px);
+  font-size:20px;
   
 }
