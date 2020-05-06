@@ -2,20 +2,54 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Shooting Stars</title>
+  <title>Energy</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <script>
+$(function() {
+    
+    $(".toggle").on("click", function(){
+    if($(".item").hasClass("active")){
+       $(".item").removeClass("active");
+    }
+    else{
+      $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
+
 
 </head>
+
+
 <body>
 <!-- partial:index.partial.html -->
 <body>
+
+
+
+
+<nav>
+<ul class="menu">
+<li class="logo"><a  href="https://hsuiiii.github.io/StudioFinal/">★</a></li>
+<li class="item"><a  href="#">T</a></li>
+<li class="item"><a href="#">A</a></li>
+<li class="item"><a  href="#">R</a></li>
+<li class="item "><a href="#">O</a></li>
+<li class="item "><a href="#">T</a></li>
+<li class="toggle"><a  href="#"><span class="bars"></span></a></li>
+</ul>
+</nav>
 
 
 <h1>Choose the color the present your energy.</h1>
 
 
   <div class="fate">
- <a href ="Objects/index.html"><div class="container">
+ <a class="energy" href ="Objects/Red.html"><div class="container">
 <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588282914/pngguru.com_zstfnr.png" alt="Avatar" class="image">
   <div class="middle">
     <div class="text"></div>
@@ -23,7 +57,7 @@
 </div>
 </a>
 
- <a href ="Objects/index.html">
+ <a class="energy" href ="Objects/Yellow.html">
   
   <div class="container">
   <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588282914/pngguru.com_zstfnr.png" alt="Avatar" class="image">
@@ -33,7 +67,7 @@
 </div>
 </a>
 
- <a href ="Objects/index.html">
+ <a class="energy" href ="Objects/Blue.html">
   <div class="container">
   <img src="https://res.cloudinary.com/dokp9e80w/image/upload/v1588282914/pngguru.com_zstfnr.png" alt="Avatar" class="image">
   <div class="middle">
