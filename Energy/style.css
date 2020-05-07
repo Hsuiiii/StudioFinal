@@ -260,7 +260,26 @@ padding-right:0;
 }
 }
 
+.trans{
+Animation:transitionIn:0.75s;
+}
 
+
+@keyframes transitionIn{
+From{
+  opacity: 0;
+Transform:roteX(-10deg);
+
+}
+
+To{
+
+  opacity: 1;
+Transform:roteX(0);
+
+}
+
+}
 
 @media (max-width: 600px) {
 
