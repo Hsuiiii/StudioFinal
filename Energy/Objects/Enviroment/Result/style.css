@@ -22,8 +22,16 @@ font-size: 50px;
 }
 
 
+.container{
+display:flex;
+}
 
+.information1{
+width:50%;
+font-size:30px;
+margin:5%;
 
+}
 
   body, html {
   height: 100vh;
@@ -231,6 +239,9 @@ font-size: 50px;
 
 .flip-card-back {
   color:white;
+    width: 230px;
+  height: 400px;
+  background-color: white;
   transform: rotateY(180deg);
 }
 
@@ -407,6 +418,21 @@ margin-top:20%;
 
 }
 
+.information1{
+display:none;
+}
+
+.flip-card-back {
+  color:black;
+  transform: rotateY(180deg);
+
+}
+.information{
+ font-size:18px;
+ text-align:left;
+ margin:5%;
+
+}
 }
 
 
