@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 
 body {
-  background: linear-gradient(145deg, #00103a 20%, #7C5AC5 100%);
+  background: linear-gradient(145deg, #00103a 20%, rgb(84, 125, 238) 100%);
   color:white;
   align-items: center;
   text-align:center;
