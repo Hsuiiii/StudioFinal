@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 
-@font-face {
-  font-family: woodt;
-  src: url(Henry Sui - Wood.otf);
-}
 * {
   box-sizing: border-box;
 }
@@ -14,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
- font-family: 'woodt';
+  font-family: 'Kelly Slab', cursive;
 }
 
 
