@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
 
+@font-face {
+  font-family: woodt;
+  src: url(Henry Sui - Wood.otf);
+}
 body {
   background: linear-gradient(145deg, #00103a 20%, #7C5AC5 100%);
   color:white;
   align-items: center;
   text-align:center;
   overflow: hidden;
-  font-family: 'Kelly Slab', cursive;
+font-family: 'woodt';
   margin-bottom:10%;
 }
 
